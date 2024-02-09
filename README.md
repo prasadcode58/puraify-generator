@@ -18,7 +18,8 @@ To run this project on live server, run
 
 `npm run start`
 
-#Build for deploy,
+#
+Build for deploy,
 
 To build this file, run
 
