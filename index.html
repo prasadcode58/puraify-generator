@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="bg-[#F2DCE0] w-screen h-screen flex justify-center items-center overflow-y-hidden overflow-x-hidden">
+        <div class="w-[450px] h-[589px]  flex flex-col items-center">
+            <h1 class="text-3xl text-[#594246] font-bold tracking-wider">
+                PASSWORD GENERATOR
+            </h1>
+
+            <div class="w-full h-[77px] flex justify-between items-center rounded-2xl border-b-[5px] my-4 border-[#F2ACBF] bg-[#F2C4D0] px-6">
+                <input readonly placeholder="PASSWORD" class="bg-transparent placeholder:text-2xl text-2xl pointer-events-none placeholder:text-[#A67C87] text-[#594246] placeholder:font-bold font-bold" id="passwordText"></input>
+
+                <div id="copyBtn">
+                    <span id="copyMsg"></span>
+                    <i class=" text-[#594246] text-2xl fa-regular fa-clone scale-y-[-1] scale-x-[-1]" ></i>
+                </div>
+                
+            </div>
+
+            <div class="w-[450px] h-[442px] flex flex-col bg-[#F2C4D0] rounded-2xl p-7 border-b-4 border-[#F2ACBF]">
+
+                <div class="grid grid-cols-2 grid-rows-2">
+                    <h3 class="text-xl text-[#594246] font-semibold tracking-wide">
+                        Password Length
+                    </h3>
+
+                    <h4 class="justify-self-end text-[#594246] text-xl font-bold" id="lengthNumber">
+                        1
+                    </h4>
+
+                    <div class="relative col-span-2">
+                        <input class="rangeSlider" type="range" min="1" max="20" step="1" id="lengthSlider">
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col">
+
+                    <div class="flex items-center gap-4 mb-3">
+                        <input id="uppercaseSelect"  class="checkboxing cursor-pointer appearance-none w-5 h-5 rounded-md border-2 border-[#594246] bg-pink-100 " type="checkbox">
+                        <label for="uppercaseSelect" class="text-xl text-white">Include Uppercase Letters</label>
+                    </div>
+
+                    <div class="flex items-center gap-4 mb-3">
+                        <input id="lowercaseSelect"  class="checkboxing cursor-pointer appearance-none w-5 h-5 rounded-md border-2 border-[#594246] bg-pink-100 " type="checkbox">
+                        <label for="lowercaseSelect" class="text-xl text-white">Include Lowercase Letters</label>
+                    </div>
+
+                    <div class="flex items-center gap-4 mb-3">
+                        <input id="numberSelect"  class="checkboxing cursor-pointer appearance-none w-5 h-5 rounded-md border-2 border-[#594246] bg-pink-100 " type="checkbox">
+                        <label for="numbersSelect" class="text-xl text-white">Include Numbers</label>
+                    </div>
+
+                    <div class="flex items-center gap-4 mb-3">
+                        <input id="symbolsSelect"  class="checkboxing cursor-pointer appearance-none w-5 h-5 rounded-md border-2 border-[#594246] bg-pink-100 " type="checkbox">
+                        <label for="symbolsSelect" class="text-xl text-white">Include Symbols</label>
+                    </div>
+                    
+                </div>
+
+                <div class="flex justify-between mt-4 text-2xl text-[#594246] font-semibold">
+                    <h3>Strength</h3>
+
+                    <div class="w-6 h-6 bg-[#A67C87] rounded-full transition ease-in duration-150" id="strengthIndicator">
+            
+                    </div>
+                </div>
+
+                <button id="generateBtn" class="mt-7 bg-[#A67C87] py-3 rounded-xl border-b-[5px] border-[#594246] text-lg font-bold text-[#F2DCE0]">GENERATE PASSWORD</button>
+
+                
+            </div>
+
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+    <script src="https://kit.fontawesome.com/5992b6c16d.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>
