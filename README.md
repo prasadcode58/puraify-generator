@@ -1,9 +1,9 @@
 # puraify-generator
-A password generator web app with beautiful UI
+A password generator web app with beautiful UI.
 
 # Pre-requisites
 
-this project uses,
+This project uses,
 
 - [vitejs](https://vitejs.dev/)
 
