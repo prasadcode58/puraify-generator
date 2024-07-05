@@ -11,6 +11,11 @@ This project uses,
 
 - [TailwindCSS](https://tailwindcss.com/)
 
+# Install Packages
+
+To install all packages used, run
+
+`npm install i`
 
 # Running Locally
 
